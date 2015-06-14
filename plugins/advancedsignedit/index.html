@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>67clement - AdvancedSignEdit</title>
+        <meta name="author" content="67clement">
+        <meta name="keyword" content="67clement, AdvancedSignEdit, AdvancedSignedit download, télécharger advancedsignedit, AdvancedSignedit description">
+        <meta name="description" content="Page officiel de AdvancedSignEdit" />
+        <link rel="stylesheet" href="../../style.css" />
+        <link rel="stylesheet" href="../../prism.css" />
+        <link rel="stylesheet" href="../../code-decoration.css" />
+        <link rel="shortcut icon" type="image/x-icon" href="../../favicon.png" />
+    </head>
+    <body>
+        <!-- Start header -->
+        <header>
+            <div class="container">
+                <!-- Start title -->
+                <h1 class="fontface" id="title"><span class="blue">67clement</span></h1>
+                <!-- End title -->
+                <!-- Start menu -->
+                <nav>
+                    <ul>
+                        <li><a href="https://67clement.github.io/" class="orng">Home</a></li>
+                        <li><a href="https://67clement.github.io/about.html" class="grn">About</a></li>
+                        <li><a href="https://67clement.github.io/#contact_me" class="prpl">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- End menu -->
+        </header>
+        <!-- End header -->
+        <div id="container">
+            <!--start intro-->
+            <section id="intro">
+                <div class="quote">
+                    <h2 class="fontface"> <span class="orange medium">AdvancedSignEdit </span><span class="green small rotate45_noBlock">1.0.4 </span></h2> 
+                </div>
+            </section>
+            <!-- End intro -->
+            
+            <section id="description">
+                <p />AdvancedSignEdit est un plugin Bukkit en Java, celui-ci va vous permettre d'éditer vos panneaux sur votre serveur CraftBukkit!
+                <p />On peut l'éditer avec une commande ligne par ligne ou (pour la première fois) ouvrir l'interface d'édition de panneau!
+                <p />Le plugin dans sa version 1.0.4 ne marche que sous <span class="orange">CraftBukkit</span>/<span class="orange">Spigot 1.7.10</span> - <span class="orange">1.8</span>
+                <p />Il y a aussi différents symboles disponnibles: 
+                <p /><b class="smallv2">[++] → </b><b class="small">&#x2726;</b>
+                <p /><b class="smallv2"><3 → ♥ </b>
+                <p /><span class="smallv2">→ <a href="#Commands_Permissions" title="Commandes et permissions du plugin" class="blue grn">Commandes et permissions</a></span>
+                <p /><span class="smallv2">→ <a href="#Screenshots" title="Screenshots du plugin" class="blue grn">Screenshots</a></span>
+                <p /><span class="smallv2">→ <a href="#Configuration" title="Configuration du plugin" class="blue grn">Configuration</a></span>
+                <p /><span class="smallv2">→ <a href="#download" title="Téléchargement du plugin" class="blue grn">Téléchargement</a></span>
+                
+                <div class="title" id="Commands_Permissions">
+                    <h2 class="fontface"><span class="blue">Commandes et permissions</span></h2>
+                </div>
+                
+                <ul>
+                    <li><span class="orange">/EditSign open</span> Ouvre l'interface du panneau visé.</li>
+                    <li><span class="orange">/EditSign editligne [Ligne] [Texte]</span> Change le text de la ligne choisi du panneau visé. À noter que les symboles marchent sur cette commande.</li>
+                </ul>
+                <br />
+                <ul>
+                    <li><span class="orange">advancedsignedit.*</span> Donne toutes les permissions.</li>
+                    <li><span class="orange">advancedsignedit.bypass</span> Ignore la liste des panneaux non-éditable.
+                    <li><span class="orange">advancedsignedit.cmd.editsign</span> Permission de la commande /EditSign.</li>
+                    <li><span class="orange">sign.*</span> Donne les permissions sign.edit et sign.color
+                    <li><span class="orange">sign.edit</span> Permission pour éditer un panneau. (Sans la commande)</li>
+                    <li><span class="orange">sign.color</span> Autorise les joueurs à utiliser de la couleur sur les panneaux avec le code couleur.</li>
+                </ul>
+                
+                <div class="title" id="Screenshots">
+                    <h2 class="fontface"><span class="green">Screenshots</span></h2>
+                </div>
+                
+                <img src="https://67clement.github.io/img/advancedsignedit/SignBase.png" class="img_little" alt="Panneau de base" title="Panneau basique.">
+                <img src="https://67clement.github.io/img/advancedsignedit/Edit.png" class="img_little" alt="Panneau en édition" title="Panneau en train d'être édité.">
+                <img src="https://67clement.github.io/img/advancedsignedit/ApresEdition.png" class="img_little" alt="Panneau après première édition" title="Panneau après 1er édition.">
+                <img src="https://67clement.github.io/img/advancedsignedit/ApresEditionLigne2.png" class="img_little" alt="Panneau après édition de la ligne 2" title="Panneau après édition de la ligne 2">
+                <img src="https://67clement.github.io/img/advancedsignedit/ApresEditionLigne3.png" class="img_little" alt="Panneau après édition de la ligne 3" title="Panneau après édition de la ligne 3">
+                
+                <div class="title" id="Configuration">
+                    <h2 class="fontface"><span class="purple">Configuration</span></h2>
+                </div>
+                
+                <p />Fichier <b>config.yml</b>:
+                <p />--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                <pre alt="Configuration of messages.yml" title="Configuratin of messages.yml"><code class="language-yaml">#Configuration of AdvancedSignEdit
+
+Config:
+&nbsp;&nbsp;#Lists of texts if present on line 1 of a not editable sign
+&nbsp;&nbsp;SignNotEditable:
+&nbsp;&nbsp;&nbsp;&nbsp;- '&1[Heal]'
+&nbsp;&nbsp;&nbsp;&nbsp;- '&4[Heal]'
+&nbsp;&nbsp;&nbsp;&nbsp;- '&1[Gamemode]'
+&nbsp;&nbsp;&nbsp;&nbsp;- '&4[Gamemode]'
+&nbsp;&nbsp;&nbsp;&nbsp;- '&1[Free]'
+&nbsp;&nbsp;&nbsp;&nbsp;- '&4[Free]'
+&nbsp;&nbsp;&nbsp;&nbsp;- '&1[Disposal]'
+&nbsp;&nbsp;&nbsp;&nbsp;- '&4[Disposal]'
+&nbsp;&nbsp;&nbsp;&nbsp;- '&1[Time]'
+&nbsp;&nbsp;&nbsp;&nbsp;- '&4[Time]'
+&nbsp;&nbsp;&nbsp;&nbsp;- '&1[Weather]'
+&nbsp;&nbsp;&nbsp;&nbsp;- '&4[Weather]'</code></pre>
+                <p />--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                
+                <p />Fichier <b>messages.yml</b>:
+                <p />--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                <pre class="text_yml" alt="Configuration of messages.yml" title="Configuratin of messages.yml"><code class="language-yaml">#Change the different messages of the plugin!
+Prefix:
+&nbsp;&nbsp;Usage: '&4[Usage] '
+&nbsp;&nbsp;Error: '&4[Error] '
+&nbsp;&nbsp;Permissions: '&4[Permissions] '
+
+#The message is sent when the plugin open a sign editor
+OpenGui:
+&nbsp;&nbsp;Message: '&aOpen GUI...'
+&nbsp;&nbsp;Chat: true
+&nbsp;&nbsp;ActionBarMessage: false
+
+#The message is sent when the sign was edited successful
+ChangeSuccess:
+&nbsp;&nbsp;Message: '&aThe sign was changed successful!'
+&nbsp;&nbsp;Chat: true
+&nbsp;&nbsp;ActionBarMessage: false
+
+<span class="yaml_green"><b>#The message is sent when the configuration was reloaded successful</b></span>
+<span class="yaml_dark_blue"><b>ReloadSuccess</b></span>:
+&nbsp;&nbsp;<span class="yaml_dark_blue"><b>Message</b></span>: '&aThe AdvancedSignEdit's configuration was reloaded successful!'
+&nbsp;&nbsp;<span class="yaml_dark_blue"><b>Chat</b></span>: true
+&nbsp;&nbsp;<span class="yaml_dark_blue"><b>ActionBarMessage</b></span>: false
+
+<span class="yaml_green"><b>#The message is sent when the block is not a sign</b></span>
+<span class="yaml_dark_blue"><b>IsNotASign</b></span>:
+&nbsp;&nbsp;<span class="yaml_dark_blue"><b>Message</b></span>: '&cThe block is not a sign!'
+&nbsp;&nbsp;<span class="yaml_dark_blue"><b>HoverMessage</b></span>: '&cSorry =/'
+&nbsp;&nbsp;<span class="yaml_dark_blue"><b>Chat</b></span>: true
+&nbsp;&nbsp;<span class="yaml_dark_blue"><b>ActionBarMessage</b></span>: false
+
+#The messages is sent when player try edit a not editable sign.
+SignNotEditable:
+&nbsp;&nbsp;Message: '&cThis sign is not editable!'
+&nbsp;&nbsp;Chat: true
+&nbsp;&nbsp;ActionBarMessage: false
+
+InvalidNumber:
+&nbsp;&nbsp;Message: '&cThe number specified is invalid!'
+&nbsp;&nbsp;Chat: true
+&nbsp;&nbsp;ActionBarMessage: false</code></pre>
+                <p />--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            </section>
+
+            <section id="download">
+                <div class="title">
+                    <h2 class="fontface"><span class="green">Download</span></h2> 
+                </div>
+                <br>
+                <ul class="download">
+                    <li>Regardez sur le topik officiel ;)
+                </ul>
+            </section>
+        </div>
+
+        <!-- Start footer -->
+        <footer>
+
+            <div class="container">
+                <p> Copyright &copy; 2015 | 67clement </p> 
+            </div>
+   
+        </footer>
+        <!-- End footer -->
+        <script src="https://67clement.github.io/prism.js"></script>
+    </body>
+</html>
