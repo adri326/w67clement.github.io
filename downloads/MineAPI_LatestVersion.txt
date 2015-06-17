@@ -1,2 +1,0 @@
-LatestVersion: 1.5.0
-Download: 'https://67clement.github.io/downloads/MineAPI/MineAPI-1.5.0.jar'
