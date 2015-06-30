@@ -1,2 +1,2 @@
-LatestVersion: 1.6.2
-Download: 'https://67clement.github.io/downloads/MineAPI/MineAPI-1.6.2.jar'
+LatestVersion: 1.6.3
+Download: 'https://67clement.github.io/downloads/MineAPI/MineAPI-1.6.3.jar'
