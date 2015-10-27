@@ -1,2 +1,2 @@
 LatestVersion: 1.6.4
-Download: https://www.spigotmc.org/resources/mineapi.8614/download?version=50787
+Download: https://w67clement.github.io/downloads/MineAPI/MineAPI-1.6.4.jar
