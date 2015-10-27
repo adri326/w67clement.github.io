@@ -1,2 +1,2 @@
 LatestVersion: 1.6.4
-Download: ''
+Download: 'https://www.spigotmc.org/resources/mineapi.8614/download?version=50787'
