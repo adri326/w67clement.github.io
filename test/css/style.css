@@ -268,7 +268,7 @@ header {
  * of the mobile styles.
  */
 
-@media(min-width: 48em) {
+@media(max-width: 768px) {
 
 	.home-menu {
 		text-align: left;
