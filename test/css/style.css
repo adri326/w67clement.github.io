@@ -323,3 +323,10 @@ footer {
         font-size: 300%;
     }
 }
+
+@media (max-width: 78em) {
+    /* We increase the header font size even more */
+    .footer {
+        font-size: 300%;
+    }
+}
