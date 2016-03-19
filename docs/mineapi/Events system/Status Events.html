@@ -57,28 +57,24 @@ nav
 </nav>
 
 <div id="content">
-    <h1 id="events-system">Events system</h1>
-<p>What is the events system? <br />
-The events system is a simple system like Bukkit&#39;s Events for detect the sent packets. <br />
-But how to use this?</p>
-<h2 id="theoretical-course">Theoretical course</h2>
-<p>Hum, wow, we see how to use this. :D<br />
-First, we don&#39;t use the <em><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/Listener.html" title="Documentation of Bukkit&#39;s Listener interface">Bukkit&#39;s Listener interface</a></em>! We use the <em>PacketListener</em><br />
-And, other thing, we don&#39;t use the <em>EventHandler</em> annotation, but the <em>PacketHandler</em>!<br />
-Now, we need to know many things, the PacketHandler have argument: <em>PacketList listenType</em>. the listenType define what is the packet to listen.<br />
-The PacketHandler annotation can be used only on methods, the methods need have as arguments a MineAPI Event, and he have 4:</p>
+    <h1 id="status-events">Status events</h1>
+<p>The status events are simply to use!<br />
+Whether you don&#39;t read <em><a href="Events%20system" title="Events system documentation">Events system</a></em>, please read it!<br />
+To use these events, before, we need know what packets are affected:</p>
 <ul>
-<li>SendPacketEvent</li>
-<li>ReceivePacketEvent</li>
-<li>PacketPingSendEvent</li>
-<li>PacketPingReceiveEvent
-The ping packets are for the Status Packet, SendPacketEvent and ReceivePacketEvent are for Play packets. <br />
-We can define a type argument on these arguments, but they need to extends NmsPacket. <br />
-Now you can use the MineAPI&#39;s Events System.</li>
+<li>Status packets</li>
+<li>Login packets</li>
+<li>Handshake packet</li>
 </ul>
+<p>But we don&#39;t get the login packets because they aren&#39;t important for we. <br />
+The status packets are simplest because they are 4.<br />
+In a <em>PacketListener</em> we use the <em>PacketPingSendEvent<T extends NmsPacket></em> and the <em>PacketPingReceiveEvent<T extends NmsPacket></em>.<br />
+In them we have many methods:</p>
+<p><pre data-src="../code/events/methods_status_events.java"></pre>
+Now you know how to use the Status Events!</p>
 <h2 id="examples">Examples</h2>
-<p>We need to listen two sample packets, the <em>PacketPlayOutChat</em> and the <em>PacketPlayInChat</em>:</p>
-<pre class="language-java" data-src="../code/events/SimplePacketListener.java"></pre>
+<p>Wow, one example, cool! <br />
+Seriously, there an example of use: <a href="https://github.com/w67clement/AdvancedMotd" title="Go in AdvancedMotd.java ;)">AdvancedMotd</a>.</p>
 
 </div>
 
