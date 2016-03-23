@@ -15,10 +15,11 @@ function decrementSeconds() {
 }
 
 function writeInTerminal() {
+    terminal.innerHTML = text + "<br />&nbsp;&nbsp;Redirection in " + seconds + " seconds...";
     if (rectangle) {
-        terminal.innerHTML = text + "<br />&nbsp;&nbsp;Redirection in " + seconds + " seconds...<br />&nbsp;&nbsp;&#x258B;";
+        $('.caret').stop().fadeIn(100);
     } else {
-        terminal.innerHTML = text + "<br />&nbsp;&nbsp;Redirection in " + seconds + " seconds...";
+        $('.caret').stop().fadeOut(100);
     }
     rectangle = !rectangle;
 }
