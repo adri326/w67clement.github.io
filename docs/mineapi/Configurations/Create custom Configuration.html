@@ -57,24 +57,19 @@ nav
 </nav>
 
 <div id="content">
-    <h1 id="status-events">Status events</h1>
-<p>The status events are simply to use!<br />
-Whether you don&#39;t read <em><a href="Events%20system" title="Events system documentation">Events system</a></em>, please read it!<br />
-To use these events, before, we need know what packets are affected:</p>
-<ul>
-<li>Status packets</li>
-<li>Login packets</li>
-<li>Handshake packet</li>
-</ul>
-<p>But we don&#39;t get the login packets because they aren&#39;t important for we. <br />
-The status packets are simplest because they are 4.<br />
-In a <em>PacketListener</em> we use the <em>PacketPingSendEvent<T extends NmsPacket></em> and the <em>PacketPingReceiveEvent<T extends NmsPacket></em>.<br />
-In them we have many methods:</p>
-<p><pre data-src="../code/events/methods_status_events.java"></pre>
-Now you know how to use the Status Events!</p>
-<h2 id="examples">Examples</h2>
-<p>Wow, one example, cool! <br />
-Seriously, there an example of use: <a href="https://github.com/w67clement/AdvancedMotd" title="Go in AdvancedMotd.java ;)">AdvancedMotd</a>.</p>
+    <h1 id="create-custom-configuration">Create custom configuration</h1>
+<p>You want another configuration type? Like Java Properties for example? <br />
+It&#39;s possible! <br />
+<br />
+First, you need to know how to use the API for read and save files. After, you can start to create your custom configuration!<br />
+Now, create a new class who extends MineAPI&#39;s Config class. Make it abstract.<br />
+In this class, let&#39;s rewrite some methods! <br />
+First create an variable who have for value the instance of an API&#39;s Object (Example: <em><a href="http://google.github.io/gson/apidocs/com/google/gson/JsonElement.html" title="JavaDoc of JsonElement">JsonElement</a></em> for <em>Gson</em>, <em><a href="https://hub.spigotmc.org/javadocs/spigot/org/bukkit/configuration/file/FileConfiguration.html" title="JavaDoc of FileConfiguration">FileConfiguration</a></em>  for <em>Bukkit</em>).<br />
+After, rewrite the method <code>public void load()</code>. In the method, write <code>super.load();</code>, it&#39;s for the save resource. <br />
+After <code>super.load();</code>, write the method to parse/read/load the configuration to the variable. <br />
+Now, you need to write the method <code>public void save()</code>, in this, write the method to save the configuration. <br />
+<br />
+Wow! Congratulations, you know how to create an custom configuration now!</p>
 
 </div>
 

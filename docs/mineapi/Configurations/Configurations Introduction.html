@@ -57,24 +57,16 @@ nav
 </nav>
 
 <div id="content">
-    <h1 id="status-events">Status events</h1>
-<p>The status events are simply to use!<br />
-Whether you don&#39;t read <em><a href="Events%20system" title="Events system documentation">Events system</a></em>, please read it!<br />
-To use these events, before, we need know what packets are affected:</p>
-<ul>
-<li>Status packets</li>
-<li>Login packets</li>
-<li>Handshake packet</li>
-</ul>
-<p>But we don&#39;t get the login packets because they aren&#39;t important for we. <br />
-The status packets are simplest because they are 4.<br />
-In a <em>PacketListener</em> we use the <em>PacketPingSendEvent<T extends NmsPacket></em> and the <em>PacketPingReceiveEvent<T extends NmsPacket></em>.<br />
-In them we have many methods:</p>
-<p><pre data-src="../code/events/methods_status_events.java"></pre>
-Now you know how to use the Status Events!</p>
-<h2 id="examples">Examples</h2>
-<p>Wow, one example, cool! <br />
-Seriously, there an example of use: <a href="https://github.com/w67clement/AdvancedMotd" title="Go in AdvancedMotd.java ;)">AdvancedMotd</a>.</p>
+    <h1 id="configurations-introduction">Configurations introduction</h1>
+<p>MineAPI have a little API for configurations, mainly for load and save.<br />
+It supports 2 format: Json and YAML, <em>Bukkit API</em> uses YAML with the library <em><a href="http://www.snakeyaml.org" title="SnakeYaml&#39;s website">SnakeYAML</a></em>.<br />
+MineAPI uses, for Json, the library called <em>Gson</em> from Google.<br />
+The plugin have a class called Config, it&#39;s an abstract class, in we have these methods:</p>
+<p><pre data-src="../code/config/Config.methods.java"></pre>
+After, MineAPI have 2 classes for Yaml and Json: <em>YamlConfig</em> and <em>JsonConfig</em>.<br />
+For learn to use YamlConfig <a href="Yaml%20Configuration.html">click here</a>. <br />
+For learn to use JsonConfig <a href="Json%20Configuration.html">click here</a>. <br />
+But if you want, you can create a new class who extends Config. <a href="Create%20custom%20Configuration.html">Click here</a>. <br /></p>
 
 </div>
 

@@ -57,24 +57,16 @@ nav
 </nav>
 
 <div id="content">
-    <h1 id="status-events">Status events</h1>
-<p>The status events are simply to use!<br />
-Whether you don&#39;t read <em><a href="Events%20system" title="Events system documentation">Events system</a></em>, please read it!<br />
-To use these events, before, we need know what packets are affected:</p>
-<ul>
-<li>Status packets</li>
-<li>Login packets</li>
-<li>Handshake packet</li>
-</ul>
-<p>But we don&#39;t get the login packets because they aren&#39;t important for we. <br />
-The status packets are simplest because they are 4.<br />
-In a <em>PacketListener</em> we use the <em>PacketPingSendEvent<T extends NmsPacket></em> and the <em>PacketPingReceiveEvent<T extends NmsPacket></em>.<br />
-In them we have many methods:</p>
-<p><pre data-src="../code/events/methods_status_events.java"></pre>
-Now you know how to use the Status Events!</p>
-<h2 id="examples">Examples</h2>
-<p>Wow, one example, cool! <br />
-Seriously, there an example of use: <a href="https://github.com/w67clement/AdvancedMotd" title="Go in AdvancedMotd.java ;)">AdvancedMotd</a>.</p>
+    <h1 id="json-configuration">Json Configuration</h1>
+<p>Json is an format can be used for configurations. <br />
+With this, you can load your configurations easily. <br />
+But, how to use?</p>
+<h2 id="jsonconfig">JsonConfig</h2>
+<p>It extends from Config class, in JsonConfig, you can find a <em><a href="http://google.github.io/gson/apidocs/com/google/gson/JsonElement.html" title="JavaDoc of JsonElement">JsonElement</a></em> instance.
+You can find others things: <em><a href="http://google.github.io/gson/apidocs/com/google/gson/JsonParser.html" title="JavaDoc of JsonParser">JsonParser</a></em> and <em><a href="http://google.github.io/gson/apidocs/com/google/gson/Gson.html" title="JavaDoc of Gson">Gson</a></em> instances.<br />
+To load an configuration, you just need to call the method <code>void load</code>, it initializes the <em>JsonElement</em> with the content in the specified file.<br />
+To save an configuration, you just need to call the method <code>void save</code>, it write the file in Json with the content of the <em>JsonElement</em>.<br />
+Now you can create configurations in Json!</p>
 
 </div>
 

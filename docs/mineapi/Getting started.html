@@ -76,7 +76,7 @@ Now we can develop with MineAPI!</p>
 In short we need to use Gradle. Why Gradle, it&#39;s best than Maven because, it&#39;s newer, it can supports more instructions...<br />
 To develop, we need to open the Terminal or CMD. Whether you have Gradle in the Environment Variable we can use the command <code>gradle</code>. <br />
 After we have initialized the Gradle project, we modify the <b>build.gradle</b> and a some codes! <br /></p>
-<p><pre><code class="language-groovy">apply plugin: &#39;java&#39;
+<p><pre class="line-numbers"><code class="language-groovy">apply plugin: &#39;java&#39;
 apply plugin: &#39;eclipse&#39;
 apply plugin: &#39;idea&#39; // I recommend Intellij IDEA because it&#39;s have a good Gradle integration.
 <br />
@@ -87,9 +87,6 @@ archivesBaseName = &#39;PluginNameHere&#39; // Name of you&#39;re plugin.
 sourceCompatibility = 1.8 // We use Java 8
 <br />
 repositories {
-    maven {
-        url &quot;<a href="https://dl.bintray.com/w67clement/maven">https://dl.bintray.com/w67clement/maven</a>&quot;
-    }
     // It&#39;s for NMS
     ivy {
         url &quot;<a href="http://www.tcpr.ca/files/">http://www.tcpr.ca/files/</a>&quot;
@@ -98,6 +95,7 @@ repositories {
         }
     }
     mavenCentral();
+    jcenter();
 }</p>
 <p>dependencies {
     compile &#39;com.w67clement.mineapi:mineapi:LatestVersionHere&#39; // MineAPI add Spigot automatically
@@ -115,6 +113,22 @@ Wow it&#39;s simple! Now you can use MineAPI in your code!
 
 <div id="main-tree">
     <ul id="tree" class="tree">
+<li class="group">
+<a href="#"> > Configurations</a><ul class="tree">
+<li class="file">
+<a class="file-link" href="assets/../Configurations/Configurations Introduction.html?Configurations/Configurations Introduction">Configurations Introduction</a>
+</li>
+<li class="file">
+<a class="file-link" href="assets/../Configurations/Create custom Configuration.html?Configurations/Create custom Configuration">Create custom Configuration</a>
+</li>
+<li class="file">
+<a class="file-link" href="assets/../Configurations/Json Configuration.html?Configurations/Json Configuration">Json Configuration</a>
+</li>
+<li class="file">
+<a class="file-link" href="assets/../Configurations/Yaml Configuration.html?Configurations/Yaml Configuration">Yaml Configuration</a>
+</li>
+</ul>
+</li>
 <li class="group">
 <a href="#"> > Events system</a><ul class="tree">
 <li class="file">
@@ -135,7 +149,7 @@ Wow it&#39;s simple! Now you can use MineAPI in your code!
 
 </div>
 
-<script src="assets/main.js"></script>
 <script src="assets/prism.js"></script>
+<script src="assets/main.js"></script>
 </body>
 </html>
