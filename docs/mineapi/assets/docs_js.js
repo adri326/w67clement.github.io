@@ -3,8 +3,8 @@ var rectangle = true;
 var text = "$ Loading..."
 var seconds = 5;
 
-var terminalTaskId = setInterval(writeInTerminal, 200);
-var decrementTaskId = setInterval(decrementSeconds, 60000);
+var terminalTaskId = setInterval(writeInTerminal, 300);
+var decrementTaskId = setInterval(decrementSeconds, 1000);
 
 function decrementSeconds() {
     console.log("Seconds: " + seconds);
@@ -16,7 +16,7 @@ function decrementSeconds() {
 
 function writeInTerminal() {
     if (rectangle) {
-        terminal.innerHTML = text + "<br />&nbsp;&nbsp;Redirection in " + seconds + " seconds... &#x258B;";
+        terminal.innerHTML = text + "<br />&nbsp;&nbsp;Redirection in " + seconds + " seconds...<br />&nbsp;&nbsp;&#x258B;";
     } else {
         terminal.innerHTML = text + "<br />&nbsp;&nbsp;Redirection in " + seconds + " seconds...";
     }
