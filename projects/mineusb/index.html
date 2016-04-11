@@ -109,10 +109,10 @@
                 <h2 class="center black-text">Images</h2>
                 <div class="row">
                     <div class="col l6 s12">
-                        <img class="center responsive-img" src="../../assets/images/mineusb/main_frame.png" alt="MineUSB's Main frame" />
+                        <img class="center hoverable responsive-img" src="../../assets/images/mineusb/main_frame.png" alt="MineUSB's Main frame" />
                     </div>
                     <div class="col l6 s12">
-                        <img class="center responsive-img" src="../../assets/images/mineusb/eng_credits_panel.png" alt="English credits panel" />
+                        <img class="center hoverable responsive-img" src="../../assets/images/mineusb/eng_credits_panel.png" alt="English credits panel" />
                     </div>
                 </div>
             </div>
@@ -122,7 +122,7 @@
                 <p class="light">
                     Tout d'abord voici une structure complète une fois MineUSB utilisé:
                     <br>
-                    <pre>
+                    <pre class="hoverable">
 <code class="language-text">| Dossier parent
 |
 |-- bin/
@@ -149,7 +149,52 @@
                     <pre class="line-numbers language-json" data-src="../../assets/code/mineusb/config.json">
                         <code class="language-json"></code>
                     </pre>
+                    <br>
+                    Vous pourrez le remarquer, il y a une section appelé auth, c'est pour le launcher intégré.
+                    <br>
+                    Le mot de passe est crypter, donc ne craigniez pas le vol de mot de passe, mais essayez de ne pas publier cette partie de la configuration si vous vous êtes déjà connecté avec votre compte Minecraft.
                 </p>
+            </div>
+            <div class="section" id="download">
+                <h2 class="center black-text">Téléchargements et sources</h2>
+                <p>
+                    Vous pouvez télécharger le bootstrap qui mettra à jour automatiquement MineUSB. Les sources aussi peuvent être téléchargé puisque le projet est OpenSource.
+                </p>
+                <table class="responsive-table highlight bordered">
+                    <thead>
+                        <tr>
+                            <th data-field="type" data-w67lang="projects.mineusb.table.type">Type</th>
+                            <th data-field="link" data-w67lang="projects.mineusb.table.link">Lien</th>
+                            <th data-field="version" data-w67lang="projects.mineusb.table.version">Version</th>
+                            <th data-field="notdiscouraged" data-w67lang="projects.mineusb.table.discouraged">Conseillé</th>
+                            <th data-field="reason" data-w67lang="projects.mineusb.table.reason">Raison</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Bootstrap</td>
+                            <td><a class="black-text" href="../../downloads/MineUSB/MineUSB-Bootstrap-1.0.1.jar">MineUSB-Bootstrap-1.0.1.jar</a></td>
+                            <td>1.0.1</td>
+                            <td><span class="green-text"><i class="fa fa-check fa-3x"></i></span></td>
+                            <td>Met à jour automatiquement.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="red-text">MineUSB</span></td>
+                            <td><a class="black-text" href="../../downloads/MineUSB/MineUSB_Beta_1.0.3.jar">MineUSB_Beta_1.0.3.jar</td>
+                            <td>Beta 1.0.3</td>
+                            <td><span class="red-text"><i class="fa fa-remove fa-3x"></i></span></td>
+                            <td>Pas d'update automatique.</td>
+                        </tr>
+                        <tr>
+                            <td>Sources</td>
+                            <td><a class="black-text" href="https://github.com/MineUSBTeam/MineUSB/">MineUSB - Github</a></td>
+                            <td>-</td>
+                            <td><span class="amber-text"><i class="fa fa-exclamation-triangle fa-3x"></i></span></td>
+                            <td>For developpers only.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </main>

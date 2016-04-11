@@ -1,100 +1,247 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="w67clement">
-        <meta name="keyword" content="w67clement, MineUSB, MineAPI, AdvancedSignEdit">
-        <meta name="description" content="Bienvenue sur mon site! Je suis w67clement et vous pouvez retrouver mes créations et bientôt bien plus!">
-        <title>w67clement - Accueil</title>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
-        <script src="https://apis.google.com/js/platform.js"></script>
-    </head>
-    <body>
-        <!-- Start header -->
-        <header>
-            <div class="container">
-                <!-- Start title -->
-                <h1 class="fontface" id="title"><span class="blue">w67clement</span></h1>
-                <!-- End title -->
-                <!-- Start menu -->
-                <nav>
-                    <ul id="menu">
-                        <li><a href="https://w67clement.github.io/" class="orng"> Home </a></li>
-                        <li><a href="about.html" class="grn"> About </a></li>
-                        <li><a href="#contact_me" class="prpl"> Contact </a></li>
-                    </ul>
-                </nav>
-            </div>
-            <!-- End menu -->
-        </header>
-        <!-- End header -->
-        <div id="container">
-            <!--start intro-->
-            <section id="intro">
-                <div class="quote">
-                    <section class="welcome">
-                        <h2 class="fontface"> <span class="pink medium">Bienvenue </span><span class="green small rotate-45">sur </span>mon<span class="orange medium"> site!</span></h2>
-                </div>
-            </section>
-            <!-- End intro -->
+<head>
+    <title>w67clement</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link ref="stylesheet" href="css/w67main.css" />
 
-            <div class="group3">
-                <h2> Programme</h2>
-                <p>Sur ce site vous pouvez retrouver des programmes créés par moi même.</p>
-            </div>
-            <div class="group3">
-                <h2> Plugin Bukkit - Spigot</h2>
-                <p>Je crée des programmes en Java mais pas que!</p>
-                <p>Je crée aussi des plugins Bukkit! Comme: <span class="green">MineAPI</span> ou <span class="green">AdvancedSignEdit</span></p>
-            </div>
-            <div class="group3">
-                <h2> News</h2>
-                <p>- 13/06/2015: Mise en ligne du site!</p>
-                <p>- 30/04/2015: Ajout de la page de <a href="https://w67clement.github.io/plugins/mineapi/" class="grn">MineAPI</a></p>
-                <p>- 02/04/2015: Ajout de la page d'<a href="https://w67clement.github.io/plugins/advancedsignedit/" class="grn">AdvancedSignEdit</a></p>
-                <p>- 20/03/2015: Bientôt MineUSB 1.1.0!</p>
-                <p>- 20/03/2015: Création des premières pages du site!</p>
-            </div>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-            <section id="main">
-                <div class="title">
-                    <h2 class="fontface"> <span class="orange ">Mes </span><span class="green">créations</span></h2>
-                </div>
-                <br><br>
-                <ul class="list">
-                    <li><a href="https://w67clement.github.io/plugins/mineapi/" class="blue grn"><span>MineAPI</span></a></li>
-                    <li><a href="https://w67clement.github.io/plugins/advancedsignedit/" class="blue grn"><span>AdvancedSignEdit</span></a></li>
+    <!-- FAVICON !! -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.png" />
+</head>
 
-
-                </ul>
-            </section>
-
-            <!-- Start contact section -->
-            <section id="contact_me">
-                <div class="title">
-                    <h5><span class="blue">Contact</span></h5>
-                </div>
-                <br/>
-                <p>Me retrouvez:</p>
-                <ul>
-                    <li><span>     Par Email: </span><span class="orange">w67clement@aol.fr</span></li>
-                    <li><a href="https://github.com/w67clement/"><img src="https://w67clement.github.io/img/github_icon_32x32.png" alt="Github" /> <span class="orange"> w67clement sur Github</a></li>
-                    <li><div class="g-ytsubscribe" data-channelid="UCrEYxS5e2iqOw9OPYQo5DrQ" data-layout="full" data-count="default"></div></li>
-                <ul>
-            </section>
-            <!-- End contact section -->
+<body>
+    <!-- Dropdown Structure -->
+    <ul id="myprojects" class="dropdown-content">
+        <li><a href="projects/mineusb">MineUSB</a></li>
+        <li><a href="projects/mineapi">MineAPI</a></li>
+    </ul>
+    <ul id="myprojects-pc" class="dropdown-content">
+        <li><a href="projects/mineusb">MineUSB</a></li>
+        <li><a href="projects/mineapi">MineAPI</a></li>
+    </ul>
+    <!-- Navigation bar -->
+    <nav class="light-blue darken-2" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="" class="brand-logo">w67clement</a>
+            <ul class="right hide-on-med-and-down">
+                <li class="active"><a href="">Home</a></li>
+                <li><a class="dropdown-button" href="#" data-activates="myprojects-pc">Projets<i class="fa fa-chevron-down fa-lg right"></i></a></li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav" style="transform: translateX(-100%);">
+                <li class="active"><a href="">Home</a></li>
+                <li><a class="dropdown-button" href="#" data-activates="myprojects">Projets<i class="fa fa-chevron-down fa-lg right"></i></a></li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
-
-        <!-- Start footer -->
-        <footer>
-
+    </nav>
+    <main>
+        <div class="section no-pad-bot" id="index-banner">
             <div class="container">
-                <p> Copyright &copy; 2015-2016 | w67clement </p> 
+                <br>
+                <h1 class="header center cyan-text">w67clement</h1>
+                <div class="row center">
+                    <h5 class="header col s12 light">Développeur Java depuis 2 ans.</h5>
+                    <p class="header col s12 light">
+                        Hey ! Moi c'est Clément, alias w67clement !
+                        <br>
+                        Ici, c'est mon site ! Bonne visite !
+                    </p>
+                </div>
             </div>
-
-        </footer>
-        <!-- End footer -->
-
-    </body>
+        </div>
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center black-text">
+                                <i class="fa fa-code fa-x5"></i>
+                            </h2>
+                            <h5 class="center">&nbsp;</h5>
+                            <p class="light">
+                                Chuis développeur, donc forcement, je code !
+                                <br>
+                                Ici, vous pourrez retrouver divers logiciels ou plugins spigot... Voir même des mods Forge !
+                                <br>
+                                Bref, cherchez bien.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center green-text">
+                                <i class="fa fa-leaf fa-x5"></i>
+                            </h2>
+                            <h5 class="center">Des langages de programmation !</h5>
+                            <p class="light">
+                                Bien évidemment, j'ai des compétences dans divers langages. Voici une petite liste:
+                                <br>
+                                <ul>
+                                    <li>
+                                        <span class="cyan-text"><i class="fa fa-caret-right fa-lg"></i></span>&nbsp;&nbsp;Java > 75%
+                                    </li>
+                                    <li>
+                                        <span class="cyan-text"><i class="fa fa-caret-right fa-lg"></i></span>&nbsp;&nbsp;Javascript > 10%
+                                    </li>
+                                    <li>
+                                        <span class="cyan-text"><i class="fa fa-caret-right fa-lg"></i></span>&nbsp;&nbsp;&nbsp;<i class="fa fa-html5 fa-lg"></i> Html / <i class="fa fa-css3 fa-lg"></i> Css > 19%
+                                    </li>
+                                    <li>
+                                        <span class="cyan-text"><i class="fa fa-caret-right fa-lg"></i></span>&nbsp;&nbsp;Shell > 10%
+                                    </li>
+                                </ul>
+                                <br>
+                                Je sais aussi utiliser diverses lib'/API/Framework:
+                                <div class="row">
+                                    <div class="col s12 m4">
+                                        <span class="cyan-text"><i class="fa fa-caret-right fa-lg"></i></span>&nbsp;&nbsp;Spigot (Java)
+                                        <br>
+                                        <span class="cyan-text"><i class="fa fa-caret-right fa-lg"></i></span>&nbsp;&nbsp;Bungeecord (Java)
+                                        <br>
+                                        <span class="cyan-text"><i class="fa fa-caret-right fa-lg"></i></span>&nbsp;&nbsp;NMS (Java)
+                                        <br>
+                                        <span class="cyan-text"><i class="fa fa-caret-right fa-lg"></i></span>&nbsp;&nbsp;Log4j (Java)
+                                        <br>
+                                        Etc...
+                                    </div>
+                                    <div class="col s12 m4">
+                                        <span class="cyan-text"><i class="fa fa-caret-right fa-lg"></i></span>&nbsp;&nbsp;Gson (Java)
+                                        <br>
+                                        <span class="cyan-text"><i class="fa fa-caret-right fa-lg"></i></span>&nbsp;&nbsp;Netty (Java)
+                                        <br>
+                                        <span class="cyan-text"><i class="fa fa-caret-right fa-lg"></i></span>&nbsp;&nbsp;prism.js (Javascript)
+                                        <br>
+                                        <span class="cyan-text"><i class="fa fa-caret-right fa-lg"></i></span>&nbsp;&nbsp;JLine (Java)
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h2 class="center grey-text">
+                                <i class="fa fa-newspaper-o fa-x5"></i>
+                            </h2>
+                            <h5 class="center">News</h5>
+                            <p class="light">
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-circle"></i>&nbsp;&nbsp;10/04/2016 - 12/04/2016: Mise à jour du site !
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <i class="fa fa-circle"></i>&nbsp;&nbsp;13/06/2015: Mise en ligne du site !
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-circle"></i>&nbsp;&nbsp;30/04/2015: Ajout de la page de MineAPI
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-circle"></i>&nbsp;&nbsp;02/04/2015: Ajout de la page d'AdvancedSignEdit
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6 m6">
+                    <div class="card small hoverable blue-grey lighten-5">
+                        <div class="card-image">
+                            <img src="assets/images/mineusb.png">
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                Jouez à Minecraft n'importe où en quelques clics en utilisant juste: votre clé USB et MineUSB !
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="projects/mineusb">Page du projet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6 m6">
+                    <div class="card small hoverable blue-grey lighten-5">
+                        <div class="card-image">
+                            <img src="assets/images/mineapi_little.png">
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                Utilisez les class NMS le plus simplement...
+                                <br>
+                                Découvrez le Plugin Messaging Channel le plus simple jamais connu !
+                                <br>
+                                Et bien d'autres choses à découvrir !
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="projects/mineapi">Page du projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer light-blue darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">About</h5>
+                    <!-- In the future, a system of lang :3-->
+                    <p class="grey-text text-lighten-4">
+                        Hey ! Moi c'est Clément, alias w67clement. Je suis né le 19 février 2002, actuellement (2016), j'ai 14 ans. Je suis un petit développeur principalement orienté Java. Voili voilou !
+                    </p>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Contact</h5>
+                    <ul>
+                        <li>
+                            <a class="white-text" href="mailto:w67clement@gmail.com"><i class="material-icons">email</i> w67clement@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/w67clement" class="white-text"><i class="fa fa-github fa-lg" style="color: black"></i> w67clement sur Github</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/w67clement" class="white-text"><i class="fa fa-twitter fa-lg" style="color: #55ACEE"></i> @w67clement</a>
+                        </li>
+                        <li>
+                            <a href="https://youtube.com/c/w67clementDev" class="white-text"><i class="fa fa-youtube-play fa-lg" style="color: #E62117"></i> w67clement</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">&nbsp;</h5>
+                    <ul>
+                        <li>
+                            <a href="https://www.twitch.tv/w67clement" class="white-text"><i class="fa fa-twitch fa-lg" style="color: #6441A5"></i> w67clement</a>
+                        </li>
+                        <li>
+                            <a href="http://steamcommunity.com/id/w67clement" class="white-text"><i class="fa fa-steam fa-lg"></i> w67clement</a>
+                        </li>
+                        <li>
+                            <a href="skype:w67clement?userinfo" class="white-text"><i class="fa fa-skype fa-lg"></i> w67clement</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Copyright &copy; 2016 | Clément alias w67clement
+            </div>
+        </div>
+    </footer>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/w67main.js"></script>
+</body>
 </html>
