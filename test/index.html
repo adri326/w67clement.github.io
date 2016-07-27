@@ -109,30 +109,25 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/w67main.js"></script>
+    <script type="text/javascript" src="js/lang.js"></script>
     <script type="text/javascript">
-        function gup( name, url ) {
-            if (!url) url = location.href;
-            name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
-            var regexS = "[\\?&]"+name+"=([^&#]*)";
-            var regex = new RegExp( regexS );
-            var results = regex.exec( url );
-            return results == null ? null : results[1];
-        }
-
         var lang = gup("lang");
 
-        if (lang == "english") {
-            $("#projects").text("Projects");
-            $(".french").removeClass("active");
-            $(".english").addClass("active");
-            $("main").load("assets/lang/en/index/main.html");
-            $("#about").load("assets/lang/en/about.html");
-        } else {
-            $("#projects").text("Projets");
-            $(".french").addClass("active");
-            $(".english").removeClass("active");
-            $("main").load("assets/lang/fr/index/main.html");
-            $("#about").load("assets/lang/fr/about.html");
+        switch (lang) {
+            case "french":
+                $("#projects").text("Projets");
+                $(".french").addClass("active");
+                $(".english").removeClass("active");
+                $("main").load("assets/lang/fr/index/main.html");
+                $("#about").load("assets/lang/fr/about.html");
+                break;
+            default:
+                $("#projects").text("Projects");
+                $(".french").removeClass("active");
+                $(".english").addClass("active");
+                $("main").load("assets/lang/en/index/main.html");
+                $("#about").load("assets/lang/en/about.html");
+        }
         }
     </script>
 </body>
